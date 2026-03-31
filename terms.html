@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Условия использования Collepse. Правила оказания услуг, ответственность сторон, интеллектуальная собственность.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>Условия использования | Collepse</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="COllepse logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li><a href="index.html#team" class="nav-link">Команда</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="terms-hero">
+            <div class="container" data-aos="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Юридическая информация</span>
+                </div>
+                <h1 class="hero-title">
+                    Условия <span class="gradient-text">использования</span>
+                </h1>
+                <p class="last-updated">Последнее обновление: 30 марта 2026 г. | Вступает в силу: 30 марта 2026 г.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="terms-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="terms-section">
+                    <h2><i class="fas fa-gavel"></i> 1. Общие положения</h2>
+                    <p>Настоящие Условия использования (далее — «Условия») являются юридически обязывающим соглашением между вами (далее — «Пользователь», «Клиент», «Вы») и командой <strong>Collepse</strong> (далее — «Компания», «мы», «нас», «исполнитель»), регулирующим использование веб-сайта <strong>collepse.xyz</strong> (далее — «Сайт») и получение услуг, предоставляемых Компанией.</p>
+                    <p>Используя наш Сайт или заказывая услуги, вы подтверждаете, что ознакомились, поняли и согласны соблюдать настоящие Условия. Если вы не согласны с какой-либо частью Условий, пожалуйста, не используйте наш Сайт и не заказывайте услуги.</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-exclamation-triangle" style="color: #00f0ff; margin-right: 0.5rem;"></i>
+                        <strong>Важно:</strong> Услуги предоставляются на условиях "как есть" (as is) в соответствии с действующим законодательством. Компания оставляет за собой право изменять Условия в любое время. Изменения вступают в силу с момента публикации на Сайте.
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-briefcase"></i> 2. Предмет соглашения</h2>
+                    <p>Collepse предоставляет следующие виды услуг (далее — «Услуги»):</p>
+                    <ul>
+                        <li><i class="fas fa-globe"></i> <strong>Web разработка</strong> — создание веб-приложений, лендингов, SPA на React/Vue с современным дизайном.</li>
+                        <li><i class="fas fa-gamepad"></i> <strong>Game Development</strong> — разработка игр на Unity/Unreal Engine, включая дизайн, программирование, интеграцию мультиплеера.</li>
+                        <li><i class="fas fa-brain"></i> <strong>AI & Backend</strong> — создание Telegram ботов, нейросетевых решений, REST API, баз данных.</li>
+                        <li><i class="fas fa-tachometer-alt"></i> <strong>PC Optimization</strong> — сборка и настройка ПК, разгон, оптимизация под профессиональные задачи.</li>
+                    </ul>
+                    <p>Конкретный объем, сроки и стоимость услуг определяются в индивидуальном порядке и фиксируются в договоре, коммерческом предложении или переписке, подтвержденной обеими сторонами.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-file-signature"></i> 3. Порядок заключения договора</h2>
+                    <p>3.1. Заявка на оказание услуг может быть подана через форму обратной связи на Сайте, по телефону или через Telegram.<br>
+                    3.2. После получения заявки мы направляем коммерческое предложение с описанием работ, сроками и стоимостью.<br>
+                    3.3. Договор считается заключенным после согласования всех условий и внесения предоплаты (если это предусмотрено).<br>
+                    3.4. Все изменения в объеме работ оформляются дополнительным соглашением или подтверждаются в письменной форме (включая электронную переписку).</p>
+                    <div class="warning-box">
+                        <i class="fas fa-clock"></i> <strong>Сроки:</strong> Сроки выполнения указываются в договоре. Задержки возможны по объективным причинам (форс-мажор, зависимость от третьих лиц) с обязательным уведомлением Клиента.
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-coins"></i> 4. Оплата услуг</h2>
+                    <p>4.1. Цены на услуги указываются в коммерческом предложении или договоре и могут быть изменены только по соглашению сторон.<br>
+                    4.2. Способы оплаты: банковский перевод, платежные системы (UzCard, HUMO), криптовалюта (по согласованию).<br>
+                    4.3. Предоплата может составлять от 30% до 70% в зависимости от сложности проекта. Окончательный расчет производится после приемки работ.<br>
+                    4.4. В случае нарушения сроков оплаты Компания имеет право приостановить выполнение работ до момента полного погашения задолженности.</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-receipt"></i> <strong>Налогообложение:</strong> При необходимости мы предоставляем все необходимые документы для бухгалтерского учета. Клиент несет ответственность за уплату налогов в соответствии с законодательством своей страны.
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-check-circle"></i> 5. Приемка работ</h2>
+                    <p>5.1. По завершении этапа работ или проекта в целом Исполнитель направляет Клиенту уведомление о готовности результатов.<br>
+                    5.2. Клиент обязан проверить результаты в течение 5 (пяти) рабочих дней и предоставить письменное подтверждение приемки или мотивированный отказ с перечнем недостатков.<br>
+                    5.3. В случае мотивированного отказа Исполнитель устраняет недостатки в разумный срок за свой счет, если они не были вызваны изменением требований Клиента.<br>
+                    5.4. Если Клиент не предоставил ответ в установленный срок, работы считаются принятыми и подлежат полной оплате.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-copyright"></i> 6. Интеллектуальная собственность</h2>
+                    <p>6.1. Все права на исходный код, дизайн, графику, тексты и другие результаты интеллектуальной деятельности, созданные в процессе выполнения заказа, переходят к Клиенту после полной оплаты услуг, если иное не предусмотрено договором.<br>
+                    6.2. Исполнитель сохраняет право использовать созданные решения в своем портфолио, а также ссылаться на проект как на реализованный, если это не нарушает конфиденциальность.<br>
+                    6.3. Исполнитель гарантирует, что используемые библиотеки, фреймворки и сторонние компоненты не нарушают прав третьих лиц. Клиент несет ответственность за использование материалов, предоставленных им самим.</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-laptop-code"></i> <strong>Использование AI:</strong> При разработке AI-решений права на обученные модели и алгоритмы могут регулироваться отдельными условиями.
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-handshake"></i> 7. Ответственность сторон</h2>
+                    <p>7.1. Исполнитель не несет ответственности за прямые или косвенные убытки, возникшие в результате использования предоставленных продуктов, включая потерю прибыли, данных или деловой репутации.<br>
+                    7.2. Максимальная ответственность Исполнителя по любым претензиям ограничена суммой, уплаченной Клиентом за конкретную услугу.<br>
+                    7.3. Клиент обязуется предоставлять достоверную информацию и своевременно предоставлять необходимые материалы для выполнения работ.<br>
+                    7.4. За нарушение сроков оплаты Исполнитель вправе требовать уплату пени в размере 0,1% от суммы задолженности за каждый день просрочки, но не более 10% от общей стоимости.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-lock"></i> 8. Конфиденциальность</h2>
+                    <p>Стороны обязуются не разглашать конфиденциальную информацию, полученную в рамках сотрудничества, третьим лицам без письменного согласия другой стороны. Конфиденциальной считается информация, явно обозначенная как таковая или являющаяся коммерческой тайной. Обязательства по конфиденциальности действуют в течение всего срока действия договора и 3 лет после его окончания.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-ban"></i> 9. Запрещенные действия</h2>
+                    <p>Пользователь обязуется не использовать Сайт и услуги Collepse для:</p>
+                    <ul>
+                        <li>Нарушения законодательства любой юрисдикции;</li>
+                        <li>Распространения вредоносного ПО, спама, материалов экстремистского характера;</li>
+                        <li>Попыток несанкционированного доступа к системам Компании;</li>
+                        <li>Создания проектов, пропагандирующих насилие, дискриминацию или незаконную деятельность.</li>
+                    </ul>
+                    <p>Нарушение данных условий может привести к немедленному прекращению сотрудничества без возврата средств.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-power-off"></i> 10. Расторжение договора</h2>
+                    <p>10.1. Любая из сторон может расторгнуть договор, уведомив другую сторону за 10 рабочих дней.<br>
+                    10.2. При расторжении по инициативе Клиента оплаченные, но не выполненные работы подлежат возврату за вычетом фактически понесенных расходов.<br>
+                    10.3. Компания вправе расторгнуть договор в одностороннем порядке при нарушении Клиентом условий оплаты или запрещенных действий.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-balance-scale"></i> 11. Применимое право и разрешение споров</h2>
+                    <p>Настоящие Условия регулируются законодательством Республики Узбекистан. Все споры решаются путем переговоров. В случае недостижения согласия спор передается на рассмотрение в суд по месту нахождения Исполнителя (г. Ташкент). Подача претензии обязательна: срок ответа на претензию — 15 рабочих дней.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-envelope"></i> 12. Контактная информация</h2>
+                    <p>По всем вопросам, связанным с Условиями использования или оказанием услуг, вы можете связаться с нами:</p>
+                    <div class="highlight-box">
+                        <p><strong><i class="fab fa-telegram"></i> Telegram:</strong> <a href="https://t.me/collepse_official" target="_blank">@collepse_official</a><br>
+                        <strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:legal@collepse.xyz">legal@collepse.xyz</a><br>
+                        <strong><i class="fas fa-phone-alt"></i> Телефон:</strong> +998 99 057 01 51 (по вопросам сотрудничества)</p>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <h2><i class="fas fa-sync-alt"></i> 13. Заключительные положения</h2>
+                    <p>Если какое-либо положение настоящих Условий признано недействительным, остальные положения сохраняют свою силу. Названия разделов приведены для удобства и не влияют на толкование. Продолжая использовать наш Сайт или заказывать услуги, вы подтверждаете согласие с настоящими Условиями.</p>
+                </div>
+
+                <hr>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #8a9bb0;">© 2026 Collepse. Создаем будущее вместе. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="justify-content: flex-start; cursor: default;">
+                        <i class="fas fa-meteor" style="font-size: 2rem; color:#00f0ff;"></i>
+                        <span style="font-weight: bold; font-size: 1.3rem;">Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/collepse_official" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#team">Команда</a></li>
+                        <li><a href="index.html#portfolio">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Юридическая информация</h4>
+                    <ul>
+                        <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="terms.html">Условия использования</a></li>
+                        <li><a href="cookie-policy.html">Cookie политика</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fab fa-telegram"></i> @collepse_official</p>
+                    <p><i class="fas fa-envelope"></i> info@collepse.xyz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Collepse-official. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            
+            const backBtn = document.getElementById('backToTop');
+            if(window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        
+        // Back to top
+        const backBtn = document.getElementById('backToTop');
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Canvas particles (background effect)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let particles = [];
+        
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+        
+        function createParticles() {
+            particles = [];
+            for(let i = 0; i < 100; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.4 + 0.1,
+                    speedX: (Math.random() - 0.5) * 0.2,
+                    speedY: (Math.random() - 0.5) * 0.15,
+                });
+            }
+        }
+        
+        function drawParticles() {
+            if(!ctx) return;
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0c12';
+            ctx.fillRect(0, 0, width, height);
+            for(let p of particles) {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+                ctx.fill();
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if(p.x < 0) p.x = width;
+                if(p.x > width) p.x = 0;
+                if(p.y < 0) p.y = height;
+                if(p.y > height) p.y = 0;
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+    </script>
+</body>
+</html>

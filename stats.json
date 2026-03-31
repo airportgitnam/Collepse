@@ -1,0 +1,21 @@
+{
+  "totalApplications": 1,
+  "dailyApplications": {
+    "2026-03-29": 1
+  },
+  "monthlyApplications": {
+    "2026-03": 1
+  },
+  "applications": [
+    {
+      "id": "1774776284388",
+      "name": "Дилшод Абдуллаев",
+      "phone": "+998 77 068 58 84",
+      "message": "Tezst",
+      "date": "2026-03-29T09:24:44.388Z",
+      "ip": "::1",
+      "status": "pending"
+    }
+  ],
+  "lastReset": "2026-03-29T09:23:23.009Z"
+}

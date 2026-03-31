@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Collepse - футуристичная IT-команда, создающая цифровые решения будущего. GameDev, Web, AI, PC оптимизация.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>Collepse | Futuristic IT Team - Building The Future</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="neon-loader"></div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Canvas for animated particles background -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" data-aos="fade-right" data-aos-duration="800">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="Collepse logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active" data-nav="hero">Главная</a></li>
+                    <li><a href="#services" class="nav-link" data-nav="services">Услуги</a></li>
+                    <li><a href="#team" class="nav-link" data-nav="team">Команда</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-nav="portfolio">Портфолио</a></li>
+                    <li><a href="#contact" class="nav-link" data-nav="contact">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="cyber-grid"></div>
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i> 
+                        <span class="badge-text">CYBERPUNK STUDIO</span>
+                        <span class="badge-pulse"></span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        BUILDING THE <span class="glitch" data-text="FUTURE">FUTURE</span>,<br>
+                        <span class="gradient-text">ONE PIXEL AT A TIME.</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Мы — кибер-архитекторы нового поколения. Создаем цифровые вселенные, 
+                        нейросетевые интеграции и высокопроизводительные решения.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary glow-btn">
+                            <span class="btn-content">
+                                <i class="fas fa-paper-plane"></i>
+                                Начать проект
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                        <button class="btn btn-outline" id="watchDemoBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="16">0</span>
+                            <span class="stat-label">+ Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="24">0</span>
+                            <span class="stat-label">/7 Поддержка</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">% Качество</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="floating-elements">
+                        <div class="float-element" data-delay="0s">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="float-element" data-delay="1s">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="float-element" data-delay="2s">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="float-element" data-delay="0.5s">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                    </div>
+                    <div class="cyber-cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="scroll-text">SCROLL</div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-cogs"></i> 
+                        Что мы делаем
+                    </span>
+                    <h2 class="section-title">
+                        Наши <span class="highlight">компетенции</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <p class="section-subtitle">Полный спектр IT-услуг для вашего бизнеса</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-bg"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Web3 & Frontend</h3>
+                        <p>Современные веб-приложения на React/Vue с неоновой эстетикой и плавными анимациями</p>
+                        <div class="card-stats">
+                            <span>✨ 15+ проектов</span>
+                            <span>⚡ 99% скорость</span>
+                        </div>
+                        <a href="#contact" class="card-link">Узнать больше →</a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-bg"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-gamepad"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Game Development</h3>
+                        <p>Разработка игр на Unity/Unreal с уникальным геймдизайном и мультиплеером</p>
+                        <div class="card-stats">
+                            <span>🎮 8+ игр</span>
+                            <span>🏆 5 наград</span>
+                        </div>
+                        <a href="#contact" class="card-link">Узнать больше →</a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-bg"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-brain"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>AI & Backend</h3>
+                        <p>Интеграция нейросетей, Telegram боты, масштабируемые API и умные алгоритмы</p>
+                        <div class="card-stats">
+                            <span>🤖 20+ ботов</span>
+                            <span>📊 10M запросов</span>
+                        </div>
+                        <a href="#contact" class="card-link">Узнать больше →</a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-bg"></div>
+                        <div class="card-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>PC Optimization</h3>
+                        <p>Сборка ПК, разгон, настройка под профессиональные задачи и киберспорт</p>
+                        <div class="card-stats">
+                            <span>💻 100+ сборок</span>
+                            <span>⚡ +40% FPS</span>
+                        </div>
+                        <a href="#contact" class="card-link">Узнать больше →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-users"></i> 
+                        Киберимпланты
+                    </span>
+                    <h2 class="section-title">
+                        Наша <span class="highlight">команда</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <p class="section-subtitle">Элитные специалисты с уникальными навыками</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Team member 1 -->
+                    <div class="team-card" data-member="shokhruz" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="https://ui-avatars.com/api/?background=00f0ff&color=0a0c12&bold=true&size=120&name=S" alt="Shokhruz">
+                                <div class="avatar-status online"></div>
+                            </div>
+                            <div class="member-badge">
+                                <i class="fas fa-gamepad"></i> GameDev Lead
+
+
+
+                            </div>
+                        </div>
+                        <h3 class="member-name">Шохруз</h3>
+                        <p class="member-role">🎮 Starter in GameDev and in C#</p>
+                        <div class="skills">
+                            <span class="skill-tag">Unity/Unreal</span>
+                            <span class="skill-tag">C# Expert</span>
+                            <span class="skill-tag">Game Design</span>
+                            <span class="skill-tag">Performance</span>
+                        </div>
+                        <div class="member-contacts">
+                            <a href="tel:+998990570151" class="contact-link">
+                                <i class="fas fa-phone-alt"></i> +998 99 057 01 51
+                            </a>
+                            <a href="https://t.me/Sh_I_365" target="_blank" class="contact-link">
+                                <i class="fab fa-telegram"></i> @Sh_I_365
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-card-contact" data-phone="+998990570151" data-telegram="Sh_I_365">
+                                <span>Contact Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team member 2 -->
+                    <div class="team-card" data-member="bekhruz" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="https://ui-avatars.com/api/?background=b700ff&color=fff&bold=true&size=120&name=B" alt="Bekhruz">
+                                <div class="avatar-status online"></div>
+                            </div>
+                            <div class="member-badge">
+                                <i class="fas fa-microchip"></i> Hardware
+                            </div>
+                        </div>
+                        <h3 class="member-name">Бехруз</h3>
+                        <p class="member-role">💻 PC & Game Services</p>
+                        <div class="skills">
+                            <span class="skill-tag">PC Build</span>
+                            <span class="skill-tag">CS:GO Boost</span>
+                            <span class="skill-tag">Minecraft</span>
+                            <span class="skill-tag">Strategy</span>
+                        </div>
+                        <div class="member-contacts">
+                            <a href="tel:+998971200801" class="contact-link">
+                                <i class="fas fa-phone-alt"></i> +998 97 120 08 01
+                            </a>
+                            <a href="https://t.me/bakuzilla_tm" target="_blank" class="contact-link">
+                                <i class="fab fa-telegram"></i> @bakuzilla_tm
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-card-contact" data-phone="+998971200801" data-telegram="bakuzilla_tm">
+                                <span>Contact Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team member 3 -->
+                    <div class="team-card" data-member="nurfayz" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="https://ui-avatars.com/api/?background=00f0ff&color=0a0c12&bold=true&size=120&name=N" alt="Nurfayz">
+                                <div class="avatar-status online"></div>
+                            </div>
+                            <div class="member-badge">
+                                <i class="fas fa-palette"></i> UI/UX
+                            </div>
+                        </div>
+                        <h3 class="member-name">Нурфайз</h3>
+                        <p class="member-role">🎨 Web Design & Frontend</p>
+                        <div class="skills">
+                            <span class="skill-tag">React/Vue</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Animation</span>
+                            <span class="skill-tag">Performance</span>
+                        </div>
+                        <div class="member-contacts">
+                            <a href="tel:+998955553095" class="contact-link">
+                                <i class="fas fa-phone-alt"></i> +998 95 555 30 95
+                            </a>
+                            <a href="https://t.me/xTokitox" target="_blank" class="contact-link">
+                                <i class="fab fa-telegram"></i> @xTokitox
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-card-contact" data-phone="+998955553095" data-telegram="xTokitox">
+                                <span>Contact Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team member 4 -->
+                    <div class="team-card" data-member="isfandiyor" data-aos="flip-left" data-aos-delay="400">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="avatar">
+                                <img src="https://ui-avatars.com/api/?background=b700ff&color=fff&bold=true&size=120&name=I" alt="Isfandiyor">
+                                <div class="avatar-status online"></div>
+                            </div>
+                            <div class="member-badge">
+                                <i class="fas fa-crown"></i> Lead Dev
+                            </div>
+                        </div>
+                        <h3 class="member-name">Исфандиёр</h3>
+                        <p class="member-role">🧠 Backend & AI Engineer</p>
+                        <div class="skills">
+    <span class="skill-tag">Node.js / Express</span>
+    <span class="skill-tag">Telegram Bot API (Telegraf)</span>
+    
+    <span class="skill-tag">MongoDB & Mongoose</span>
+    <span class="skill-tag">PostgreSQL / Prisma</span>
+    
+    <span class="skill-tag">LLM Integration (GPT-4/Gemini)</span>
+    <span class="skill-tag">AI Prompt Engineering</span>
+    
+    <span class="skill-tag">REST API Development</span>
+    <span class="skill-tag">Full-stack Workflow</span>
+</div>
+                        <div class="member-contacts">
+                            <a href="tel:+998770685884" class="contact-link">
+                                <i class="fas fa-phone-alt"></i> +998 77 068 58 84
+                            </a>
+                            <a href="https://t.me/Vohidov_I" target="_blank" class="contact-link">
+                                <i class="fab fa-telegram"></i> @Vohidov_I
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-card-contact" data-phone="+998770685884" data-telegram="Vohidov_I">
+                                <span>Contact Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-rocket"></i> 
+                        Наши работы
+                    </span>
+                    <h2 class="section-title">
+                        Избранные <span class="highlight">проекты</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <p class="section-subtitle">Реальные кейсы, которые говорят сами за себя</p>
+                </div>
+                
+                <div class="portfolio-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">Все проекты</button>
+                    <button class="filter-btn" data-filter="web">Web разработка</button>
+                    <button class="filter-btn" data-filter="game">Game Dev</button>
+                    <button class="filter-btn" data-filter="ai">AI проекты</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h4>Lingo Nova</h4>
+                                <p>Современный learning UI с Web3 интеграцией</p>
+                                <a href="https://lingo-nova-ai.netlify.app/" class="portfolio-link">View Case <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="game" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h4>CS Elite</h4>
+                                <p>Экшн-игра на Unity с процедурной генерацией</p>
+                                <a href="https://cs-elite.netlify.app/" class="portfolio-link">View Case <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="web" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <h4>D3V HUB</h4>
+                                <p>Аналитическая платформа для начинающих программистов</p>
+                                <a href="https://d3vhub.netlify.app/" class="portfolio-link">View Case <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-paper-plane"></i> 
+                        Связь
+                    </span>
+                    <h2 class="section-title">
+                        Начнем <span class="highlight">проект</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <p class="section-subtitle">Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Режим работы</h4>
+                            <p>24/7 онлайн поддержка<br>Ответ в течение 15 минут</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Локация</h4>
+                            <p>Цифровое пространство<br>Работаем удаленно по всему миру</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fab fa-telegram"></i>
+                            <h4>Telegram канал</h4>
+                            <p>Подпишитесь на новости и кейсы</p>
+                            <a href="https://t.me/collepse_official" target="_blank" class="telegram-link">
+                                @collepse_official
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form-modern">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="name" name="name" required autocomplete="name">
+                                    <label for="name">Ваше имя <span class="required">*</span></label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                                    <label for="phone">Номер телефона <span class="required">*</span></label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="telegramContact" name="telegramContact" required autocomplete="off">
+                                    <label for="telegramContact">Ник в Telegram <span class="required">*</span></label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <textarea id="message" name="message" rows="4"></textarea>
+                                    <label for="message">Описание заказа</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">
+                                    Я согласен(на) с <a href="policy.html" class="policy-link">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <span class="btn-text">Отправить заявку</span>
+                                <span class="btn-loader">
+                                    <i class="fas fa-spinner fa-spin"></i> Отправка...
+                                </span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+
+                        <!-- <div class="bot-control-panel" data-aos="fade-left">
+                            <div class="panel-header">
+                                <h3>Панель управления ботом</h3>
+                                <p>Выберите действие для пользователя и отправьте команду напрямую в Telegram.</p>
+                            </div>
+
+                            <form id="botForm" class="contact-form-modern bot-form">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" id="botNickname" name="botNickname" required autocomplete="off">
+                                        <label for="botNickname">Ник в Telegram <span class="required">*</span></label>
+                                        <div class="input-border"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group select-group">
+                                        <select id="botAction" name="botAction" required>
+                                            <option value="">Выберите действие</option>
+                                            <option value="message">Написать сообщение</option>
+                                            <option value="blacklist">Добавить в ЧС</option>
+                                            <option value="block">Заблокировать</option>
+                                        </select>
+                                        <label for="botAction">Действие <span class="required">*</span></label>
+                                        <div class="input-border"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group bot-message-group">
+                                    <div class="input-group">
+                                        <textarea id="botMessage" name="botMessage" rows="3"></textarea>
+                                        <label for="botMessage">Сообщение</label>
+                                        <div class="input-border"></div>
+                                    </div>
+                                    <p class="bot-action-hint" id="botActionHint">Введите текст, если хотите написать пользователю.</p>
+                                </div>
+
+                                <button type="submit" class="btn-submit bot-submit" id="botSubmitBtn">
+                                    <span class="btn-text">Отправить команду</span>
+                                    <span class="btn-loader">
+                                        <i class="fas fa-spinner fa-spin"></i> Выполняется...
+                                    </span>
+                                    <div class="btn-glow"></div>
+                                </button>
+
+                                <div id="botStatus" class="form-status"></div>
+                            </form>
+
+                            <div class="bot-listing">
+                                <div class="bot-list">
+                                    <h4>Заблокированные</h4>
+                                    <ul id="blockedUsers" class="bot-list-items">
+                                        <li>Пока нет</li>
+                                    </ul>
+                                </div>
+                                <div class="bot-list">
+                                    <h4>Черный список</h4>
+                                    <ul id="blacklistedUsers" class="bot-list-items">
+                                        <li>Пока нет</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">
+                        <i class="fas fa-comments"></i> 
+                        Отзывы
+                    </span>
+                    <h2 class="section-title">
+                        Что говорят <span class="highlight">клиенты</span>
+                        <div class="title-line"></div>
+                    </h2>
+                </div>
+                
+                <div class="testimonials-slider" data-aos="fade-up">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Отличная команда! Сделали сайт на высшем уровне, учли все пожелания. Рекомендую!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">А</div>
+                            <div class="author-info">
+                                <h4>Бекзод Абдуллаев</h4>
+                                <p>CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Профессиональный подход к учебного сайта. Сделали все в срок и даже раньше!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">М</div>
+                            <div class="author-info">
+                                <h4>Нафиса Низамова</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-meteor"></i>
+                        <span>Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/collepse" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/collepse_official" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="twitter.html" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="discord.html" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="web-development.html">Web разработка</a></li>
+                        <li><a href="game-development.html">Game Development</a></li>
+                        <li><a href="ai-integrations.html">AI интеграции</a></li>
+                        <li><a href="pc-optimization.html">PC оптимизация</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Подписка</h4>
+                    <p>Будьте в курсе наших новостей</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Email адрес" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collepse-official. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

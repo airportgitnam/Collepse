@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Политика использования cookies на сайте Collepse. Управление файлами cookie, аналитика и конфиденциальность.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>Cookie Policy | Collepse</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="Collepse logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li><a href="index.html#team" class="nav-link">Команда</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="cookie-hero">
+            <div class="container" data-aos="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Cookie Policy</span>
+                </div>
+                <h1 class="hero-title">
+                    Политика использования <span class="gradient-text">cookies</span>
+                </h1>
+                <p class="last-updated">Последнее обновление: 30 марта 2026 г.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="cookie-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="cookie-section">
+                    <h2><i class="fas fa-info-circle"></i> 1. Что такое cookies?</h2>
+                    <p>Файлы cookie (или просто «cookies») — это небольшие текстовые файлы, которые веб-сайт сохраняет на вашем устройстве (компьютере, смартфоне, планшете) при первом посещении. Они помогают сайту запоминать информацию о вашем визите, ваших предпочтениях и действиях, чтобы сделать ваше взаимодействие с сайтом более удобным и персонализированным.</p>
+                    <p>На сайте <strong>collepse.xyz</strong> мы используем cookies для обеспечения корректной работы, анализа трафика, улучшения функциональности и безопасности. Используя наш сайт, вы соглашаетесь с использованием cookies в соответствии с настоящей Политикой.</p>
+                    <div class="highlight-box">
+                        <i class="fas fa-shield-alt" style="color: #00f0ff; margin-right: 0.5rem;"></i>
+                        <strong>Конфиденциальность:</strong> Cookies не содержат личных данных, таких как ваше имя, телефон или адрес электронной почты, если вы не предоставили их самостоятельно через формы обратной связи.
+                    </div>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-list"></i> 2. Типы cookies, которые мы используем</h2>
+                    <p>Мы используем следующие категории cookies:</p>
+                    <div class="cookie-table">
+                        <table>
+                            <thead>
+                                <tr><th>Тип cookie</th><th>Описание</th><th>Срок хранения</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Обязательные (Necessary)</strong></td>
+                                    <td>Необходимы для базовой функциональности сайта: навигация, доступ к защищенным разделам, безопасность. Без них сайт не может正常工作.</td>
+                                    <td>Сессионные / до 1 года</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Функциональные (Functional)</strong></td>
+                                    <td>Запоминают ваши предпочтения (например, языковые настройки, тему оформления), чтобы улучшить用户体验.</td>
+                                    <td>До 1 года</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Аналитические (Analytics)</strong></td>
+                                    <td>Собирают анонимную информацию о том, как посетители используют сайт (количество посещений, источники трафика, поведение). Помогают нам улучшать контент и структуру.</td>
+                                    <td>До 2 лет</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Сторонние (Third-party)</strong></td>
+                                    <td>Устанавливаются внешними сервисами, интегрированными в сайт (например, Google Analytics, YouTube). Их использование регулируется политиками соответствующих сервисов.</td>
+                                    <td>Зависит от сервиса</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-chart-line"></i> 3. Аналитические сервисы</h2>
+                    <p>Для сбора статистики и улучшения работы сайта мы используем:</p>
+                    <ul>
+                        <li><i class="fab fa-google"></i> <strong>Google Analytics</strong> — собирает данные о поведении пользователей, не передавая личную информацию. <a href="https://policies.google.com/technologies/cookies" target="_blank">Политика cookies Google</a></li>
+                        <li><i class="fas fa-chart-simple"></i> <strong>Yandex.Metrica</strong> — аналогичный сервис для анализа трафика из стран СНГ.</li>
+                    </ul>
+                    <p>Вы можете отказаться от сбора данных Google Analytics, установив <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">официальное расширение для браузера</a>.</p>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-sliders-h"></i> 4. Управление cookies</h2>
+                    <p>Вы можете контролировать и настраивать использование cookies в любое время. Большинство браузеров позволяют:</p>
+                    <ul>
+                        <li>Просматривать список сохраненных cookies и удалять их.</li>
+                        <li>Блокировать cookies от определенных сайтов или всех сайтов.</li>
+                        <li>Настроить автоматическое удаление cookies при закрытии браузера.</li>
+                    </ul>
+                    <p>Инструкции для популярных браузеров:</p>
+                    <ul>
+                        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/ru/kb/udalenie-kuk" target="_blank">Mozilla Firefox</a></li>
+                        <li><a href="https://support.apple.com/ru-ru/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
+                        <li><a href="https://support.microsoft.com/ru-ru/microsoft-edge/%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-cookie-%D0%B2-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+                    </ul>
+                    <div class="cookie-controls">
+                        <h3><i class="fas fa-cog"></i> Быстрая настройка cookies</h3>
+                        <p>Вы можете принять или отключить необязательные cookies (аналитические и функциональные) прямо сейчас. Обязательные cookies всегда активны для корректной работы сайта.</p>
+                        <div class="cookie-buttons">
+                            <button id="acceptAllCookies" class="cookie-btn cookie-btn-primary">Принять все cookies</button>
+                            <button id="declineNonEssential" class="cookie-btn cookie-btn-secondary">Только необходимые</button>
+                        </div>
+                        <p style="font-size: 0.8rem; margin-top: 1rem; color: #8a9bb0;">Ваши настройки будут сохранены в вашем браузере.</p>
+                    </div>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-clock"></i> 5. Срок хранения cookies</h2>
+                    <p>Срок хранения cookies может быть:</p>
+                    <ul>
+                        <li><strong>Сессионные (Session cookies):</strong> удаляются автоматически после закрытия браузера.</li>
+                        <li><strong>Постоянные (Persistent cookies):</strong> остаются на устройстве до истечения установленного срока (от нескольких дней до 2 лет) или до их ручного удаления.</li>
+                    </ul>
+                    <p>Мы используем оба типа для обеспечения баланса между функциональностью и производительностью.</p>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-exchange-alt"></i> 6. Изменения в Политике cookies</h2>
+                    <p>Мы можем периодически обновлять настоящую Политику в связи с изменениями в законодательстве или функционале сайта. Актуальная версия всегда доступна по этому адресу. При существенных изменениях мы уведомим пользователей через баннер или всплывающее уведомление на сайте.</p>
+                </div>
+
+                <div class="cookie-section">
+                    <h2><i class="fas fa-envelope"></i> 7. Контактная информация</h2>
+                    <p>Если у вас есть вопросы об использовании cookies на нашем сайте, пожалуйста, свяжитесь с нами:</p>
+                    <div class="highlight-box">
+                        <p><strong><i class="fab fa-telegram"></i> Telegram:</strong> <a href="https://t.me/collepse_official" target="_blank">@collepse_official</a><br>
+                        <strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:privacy@collepse.xyz">privacy@collepse.xyz</a><br>
+                        <strong><i class="fas fa-globe"></i> Веб-форма:</strong> <a href="index.html#contact">Раздел "Связь" на главной странице</a></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                    <p style="color: #8a9bb0;">© 2026 Collepse. Мы уважаем вашу приватность и стремимся к прозрачности.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="justify-content: flex-start; cursor: default;">
+                        <i class="fas fa-meteor" style="font-size: 2rem; color:#00f0ff;"></i>
+                        <span style="font-weight: bold; font-size: 1.3rem;">Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/collepse_official" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#team">Команда</a></li>
+                        <li><a href="index.html#portfolio">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Юридическая информация</h4>
+                    <ul>
+                        <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="terms.html">Условия использования</a></li>
+                        <li><a href="cookie-policy.html">Cookie политика</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fab fa-telegram"></i> @collepse_official</p>
+                    <p><i class="fas fa-envelope"></i> info@collepse.xyz</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Collepse-official. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p><i class="fas fa-cookie-bite" style="color: #00f0ff;"></i> Мы используем cookies для улучшения работы сайта, анализа трафика и персонализации. Вы можете принять все cookies или настроить их использование.</p>
+        <div class="cookie-banner-buttons">
+            <button id="bannerAcceptAll" class="cookie-btn cookie-btn-primary">Принять все</button>
+            <button id="bannerDecline" class="cookie-btn cookie-btn-secondary">Только необходимые</button>
+            <a href="cookie-policy.html" style="color: #00f0ff; font-size: 0.85rem; text-decoration: none; align-self: center;">Подробнее</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Cookie management functions
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
+        }
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+            return null;
+        }
+
+        function acceptAllCookies() {
+            setCookie('cookie_consent', 'all', 365);
+            setCookie('analytics_consent', 'true', 365);
+            setCookie('functional_consent', 'true', 365);
+            hideBanner();
+            console.log('All cookies accepted');
+            // Here you would enable analytics scripts if they were blocked
+        }
+
+        function declineNonEssential() {
+            setCookie('cookie_consent', 'necessary', 365);
+            setCookie('analytics_consent', 'false', 365);
+            setCookie('functional_consent', 'false', 365);
+            hideBanner();
+            console.log('Only necessary cookies accepted');
+        }
+
+        function hideBanner() {
+            const banner = document.getElementById('cookieBanner');
+            if (banner) banner.classList.add('hidden');
+        }
+
+        function checkCookieConsent() {
+            const consent = getCookie('cookie_consent');
+            if (consent) {
+                hideBanner();
+            }
+        }
+
+        // Event listeners for cookie controls
+        const acceptAllBtn = document.getElementById('acceptAllCookies');
+        const declineBtn = document.getElementById('declineNonEssential');
+        const bannerAcceptAll = document.getElementById('bannerAcceptAll');
+        const bannerDecline = document.getElementById('bannerDecline');
+
+        if (acceptAllBtn) acceptAllBtn.addEventListener('click', acceptAllCookies);
+        if (declineBtn) declineBtn.addEventListener('click', declineNonEssential);
+        if (bannerAcceptAll) bannerAcceptAll.addEventListener('click', acceptAllCookies);
+        if (bannerDecline) bannerDecline.addEventListener('click', declineNonEssential);
+
+        checkCookieConsent();
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            
+            const backBtn = document.getElementById('backToTop');
+            if(window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        
+        // Back to top
+        const backBtn = document.getElementById('backToTop');
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Canvas particles (background effect)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let particles = [];
+        
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+        
+        function createParticles() {
+            particles = [];
+            for(let i = 0; i < 100; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.4 + 0.1,
+                    speedX: (Math.random() - 0.5) * 0.2,
+                    speedY: (Math.random() - 0.5) * 0.15,
+                });
+            }
+        }
+        
+        function drawParticles() {
+            if(!ctx) return;
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0c12';
+            ctx.fillRect(0, 0, width, height);
+            for(let p of particles) {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+                ctx.fill();
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if(p.x < 0) p.x = width;
+                if(p.x > width) p.x = 0;
+                if(p.y < 0) p.y = height;
+                if(p.y > height) p.y = 0;
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+    </script>
+</body>
+</html>

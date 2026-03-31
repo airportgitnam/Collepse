@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Collepse PC Optimization: сборка ПК, разгон, настройка под игры и профессиональные задачи. Максимальная производительность для киберспорта и работы.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>PC Optimization | Collepse - Максимальная мощность вашего ПК</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="cOllepse logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li><a href="index.html#team" class="nav-link">Команда</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- PC Hero Section -->
+        <section class="pc-hero">
+            <div class="container">
+                <div data-aos="fade-up">
+                    <div class="hero-badge">
+                        <i class="fas fa-microchip"></i>
+                        <span>Hardware & Optimization</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Выжмите <span class="gradient-text">максимум</span><br>
+                        из вашего железа
+                    </h1>
+                    <p class="hero-description">
+                        Сборка ПК под ключ, профессиональный разгон, настройка для игр и тяжелых задач.
+                        От киберспортивных систем до рабочих станций для 3D-моделирования и AI.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-tachometer-alt"></i> Заказать сборку
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="zoom-in">
+                        <div class="stat-number">100+</div>
+                        <p>Собранных ПК</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-number">+40%</div>
+                        <p>Прирост FPS</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-number">24/7</div>
+                        <p>Техподдержка</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-number">12 мес</div>
+                        <p>Гарантия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-cogs"></i> Что мы делаем</span>
+                    <h2 class="section-title">Наши <span class="highlight">услуги</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="flip-left">
+                        <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>Сборка ПК под ключ</h3>
+                        <p>Подбор компонентов под ваш бюджет и задачи. Сборка, установка ОС, драйверов, тестирование стабильности.</p>
+                    </div>
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Разгон (Overclocking)</h3>
+                        <p>Профессиональный разгон процессора, оперативной памяти и видеокарты. Увеличение производительности до 30%.</p>
+                    </div>
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Игровая оптимизация</h3>
+                        <p>Настройка Windows для игр, оптимизация графических настроек, увеличение FPS в CS2, Valorant, PUBG и других.</p>
+                    </div>
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Диагностика & Ремонт</h3>
+                        <p>Поиск и устранение неисправностей, замена термопасты, чистка от пыли, апгрейд компонентов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Готовые сборки -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-chart-simple"></i> Конфигурации</span>
+                    <h2 class="section-title">Популярные <span class="highlight">сборки</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="builds-grid">
+                    <div class="build-card" data-aos="zoom-in">
+                        <div class="build-header">
+                            <h3>CYBER START</h3>
+                            <div class="build-price">от $800</div>
+                            <p>Идеальный вход в киберспорт</p>
+                        </div>
+                        <div class="build-specs">
+                            <ul>
+                                <li><i class="fas fa-microchip"></i> Intel Core i5 / Ryzen 5</li>
+                                <li><i class="fas fa-tv"></i> RTX 3060 / RX 6600</li>
+                                <li><i class="fas fa-memory"></i> 16GB DDR4 3200MHz</li>
+                                <li><i class="fas fa-hdd"></i> 512GB NVMe SSD</li>
+                                <li><i class="fas fa-tachometer-alt"></i> 500W Bronze PSU</li>
+                            </ul>
+                            <p style="margin-top: 1rem; color: #8a9bb0;">FPS в CS2: 250+ | Valorant: 300+</p>
+                        </div>
+                    </div>
+                    <div class="build-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="build-header">
+                            <h3>CYBER PRO</h3>
+                            <div class="build-price">от $1500</div>
+                            <p>Для стриминга и AAA-игр</p>
+                        </div>
+                        <div class="build-specs">
+                            <ul>
+                                <li><i class="fas fa-microchip"></i> Intel i7 / Ryzen 7</li>
+                                <li><i class="fas fa-tv"></i> RTX 4070 / RX 7800 XT</li>
+                                <li><i class="fas fa-memory"></i> 32GB DDR5 6000MHz</li>
+                                <li><i class="fas fa-hdd"></i> 1TB NVMe SSD + 1TB HDD</li>
+                                <li><i class="fas fa-tachometer-alt"></i> 750W Gold PSU</li>
+                            </ul>
+                            <p style="margin-top: 1rem; color: #8a9bb0;">4K Gaming Ready | DLSS 3 Support</p>
+                        </div>
+                    </div>
+                    <div class="build-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="build-header">
+                            <h3>CYBER ULTIMATE</h3>
+                            <div class="build-price">от $3000</div>
+                            <p>Максимальная мощность</p>
+                        </div>
+                        <div class="build-specs">
+                            <ul>
+                                <li><i class="fas fa-microchip"></i> Intel i9 / Ryzen 9</li>
+                                <li><i class="fas fa-tv"></i> RTX 4090 / RTX 5080</li>
+                                <li><i class="fas fa-memory"></i> 64GB DDR5 6400MHz</li>
+                                <li><i class="fas fa-hdd"></i> 2TB Gen4 NVMe SSD</li>
+                                <li><i class="fas fa-tachometer-alt"></i> 1000W Platinum PSU</li>
+                            </ul>
+                            <p style="margin-top: 1rem; color: #8a9bb0;">Для 8K, VR, 3D-рендеринга, AI-вычислений</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс сборки -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-diagram-project"></i> Процесс</span>
+                    <h2 class="section-title">Как мы <span class="highlight">работаем</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-right">
+                        <div class="service-icon"><i class="fas fa-comments"></i></div>
+                        <h3>01. Консультация</h3>
+                        <p>Обсуждаем задачи, бюджет, игры или программы, подбираем оптимальную конфигурацию.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h3>02. Закупка</h3>
+                        <p>Покупаем компоненты у проверенных поставщиков с гарантией. Вы получаете чеки и коробки.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h3>03. Сборка & Настройка</h3>
+                        <p>Аккуратная сборка, кабель-менеджмент, установка Windows, драйверов, стресс-тестирование.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-right" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>04. Оптимизация</h3>
+                        <p>Разгон, настройка BIOS, оптимизация Windows под игры или профессиональные задачи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section>
+            <div class="container">
+                <div class="cta-section" data-aos="flip-up">
+                    <i class="fas fa-trophy" style="font-size: 3rem; color: #00f0ff; margin-bottom: 1rem; display: inline-block;"></i>
+                    <h2 style="font-size: 2rem;">Почему <span class="gradient-text">нам доверяют</span></h2>
+                    <div class="services-grid" style="margin-top: 2rem;">
+                        <div class="service-card" style="background: transparent;">
+                            <i class="fas fa-gem" style="font-size: 2rem; color: #00f0ff;"></i>
+                            <h3>Только новые компоненты</h3>
+                            <p>Гарантия на все комплектующие от 12 до 36 месяцев</p>
+                        </div>
+                        <div class="service-card" style="background: transparent;">
+                            <i class="fas fa-chart-line" style="font-size: 2rem; color: #00f0ff;"></i>
+                            <h3>Предварительное тестирование</h3>
+                            <p>Стресс-тесты, бенчмарки, проверка стабильности перед выдачей</p>
+                        </div>
+                        <div class="service-card" style="background: transparent;">
+                            <i class="fas fa-headset" style="font-size: 2rem; color: #00f0ff;"></i>
+                            <h3>Поддержка 24/7</h3>
+                            <p>Помощь с настройкой, консультации после покупки</p>
+                        </div>
+                        <div class="service-card" style="background: transparent;">
+                            <i class="fas fa-truck" style="font-size: 2rem; color: #00f0ff;"></i>
+                            <h3>Доставка по Узбекистану</h3>
+                            <p>Надежная упаковка, доставка до двери, настройка на месте</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+                    <h2 class="section-title">Часто задаваемые <span class="highlight">вопросы</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3><i class="fas fa-clock"></i> Сколько времени занимает сборка?</h3>
+                        <p>Стандартная сборка занимает 2-3 дня. При заказе комплектующих под заказ — до 7 дней.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-wrench"></i> Нужно ли обновлять BIOS?</h3>
+                        <p>Мы всегда обновляем BIOS до последней стабильной версии и настраиваем оптимальные параметры.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-gamepad"></i> Поможете настроить игры?</h3>
+                        <p>Да! После сборки устанавливаем и настраиваем ваш софт, игры, оптимизируем графические настройки.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3><i class="fas fa-charging-station"></i> Безопасен ли разгон?</h3>
+                        <p>Мы используем безопасные методы с многократным тестированием стабильности. Гарантия сохраняется.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Специалист -->
+        <section>
+            <div class="container">
+                <div class="cta-section" data-aos="zoom-in">
+                    <i class="fas fa-user-cog" style="font-size: 3rem; color: #00f0ff; margin-bottom: 1rem;"></i>
+                    <h2>Ваш персональный <span class="gradient-text">PC-инженер</span></h2>
+                    <p style="margin: 1rem 0;">Бехруз — наш специалист по железу с 3-х летним опытом. Более 100 успешных сборок, экспертный подбор комплектующих под любые задачи.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="tel:+998971200801" class="btn btn-primary">
+                            <i class="fas fa-phone-alt"></i> +998 97 120 08 01
+                        </a>
+                        <a href="https://t.me/bakuzilla_tm" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-telegram"></i> @bakuzilla_tm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="justify-content: flex-start;">
+                        <i class="fas fa-meteor" style="font-size: 2rem; color:#00f0ff;"></i>
+                        <span style="font-weight: bold;">Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/collepse_official" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#team">Команда</a></li>
+                        <li><a href="index.html#portfolio">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="web-development.html">Web разработка</a></li>
+                        <li><a href="game-development.html">Game Development</a></li>
+                        <li><a href="ai-integrations.html">AI интеграции</a></li>
+                        <li><a href="pc-optimization.html">PC оптимизация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fab fa-telegram"></i> @collepse_official</p>
+                    <p><i class="fas fa-envelope"></i> info@collepse.xyz</p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; padding-top: 2rem; border-top: 1px solid #1e2a3a;">
+                <p>© 2026 Collepse-official. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, mirror: false });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            
+            const backBtn = document.getElementById('backToTop');
+            if(window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        
+        // Back to top
+        const backBtn = document.getElementById('backToTop');
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Canvas particles
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let particles = [];
+        
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+        
+        function createParticles() {
+            particles = [];
+            for(let i = 0; i < 100; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.4 + 0.1,
+                    speedX: (Math.random() - 0.5) * 0.2,
+                    speedY: (Math.random() - 0.5) * 0.15,
+                });
+            }
+        }
+        
+        function drawParticles() {
+            if(!ctx) return;
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0c12';
+            ctx.fillRect(0, 0, width, height);
+            for(let p of particles) {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+                ctx.fill();
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if(p.x < 0) p.x = width;
+                if(p.x > width) p.x = 0;
+                if(p.y < 0) p.y = height;
+                if(p.y > height) p.y = 0;
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+    </script>
+</body>
+</html>

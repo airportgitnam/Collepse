@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Collepse Game Development: создаем игры нового поколения на Unity и Unreal Engine. Мультиплеер, уникальный геймдизайн, оптимизация под PC и консоли.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>Game Development | Collepse - Создаем цифровые вселенные</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="Collepse Logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li><a href="index.html#team" class="nav-link">Команда</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Game Dev Hero -->
+        <section class="game-hero">
+            <div class="container">
+                <div data-aos="fade-up">
+                    <div class="hero-badge">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Game Development Studio</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Создаем <span class="gradient-text">игровые вселенные</span><br>
+                        на Unity & Unreal Engine
+                    </h1>
+                    <p class="hero-description">
+                        От инди-хитов до AAA-подхода — мы воплощаем самые смелые игровые концепции. 
+                        Мультиплеер, процедурная генерация, киберспортивные механики и фотореалистичная графика.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Запустить проект
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Технологии и движки -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-microchip"></i> Технологии</span>
+                    <h2 class="section-title">Инструменты <span class="highlight">разработки</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="flip-left">
+                        <div class="tech-icon"><i class="fab fa-unity"></i></div>
+                        <h3>Unity Engine</h3>
+                        <p>2D/3D игры, мобильные проекты, AR/VR решения. Оптимизация под любые платформы и высокая производительность.</p>
+                    </div>
+                    <div class="tech-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Unreal Engine 5</h3>
+                        <p>Фотореалистичная графика, Nanite, Lumen, мощные системы частиц. Идеально для PC и консолей нового поколения.</p>
+                    </div>
+                    <div class="tech-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="tech-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Netcode & Multiplayer</h3>
+                        <p>Photon, Mirror, Dedicated servers. Создание стабильных онлайн-проектов с сотнями игроков одновременно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши игровые проекты (портфолио) -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-trophy"></i> Релизы</span>
+                    <h2 class="section-title">Игры, которые мы <span class="highlight">создали</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="games-showcase">
+                    <div class="game-card" data-aos="zoom-in">
+                        <div class="game-media">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Cyber Strike: Legacy</h3>
+                            <p>Шутер с элементами киберпанка, уникальная система прокачки имплантов, рейтинговые матчи. Более 50 000 загрузок.</p>
+                            <div class="hero-badge" style="margin-top: 1rem;"><i class="fas fa-star"></i> 4.8 ★</div>
+                        </div>
+                    </div>
+                    <div class="game-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="game-media">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Echoes of the Void</h3>
+                            <p>Roguelike RPG с процедурной генерацией подземелий. Deep lore и нелинейный сюжет. Скоро на Steam.</p>
+                            <div class="hero-badge" style="margin-top: 1rem;"><i class="fas fa-clock"></i> Скоро</div>
+                        </div>
+                    </div>
+                    <div class="game-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="game-media">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="game-info">
+                            <h3>Neon Drift League</h3>
+                            <p>Кибер-гонки на антигравитационных машинах. 12 трасс, мультиплеер 8 игроков, кастомизация транспорта.</p>
+                            <div class="hero-badge" style="margin-top: 1rem;"><i class="fas fa-gamepad"></i> Open Beta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс разработки -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-chart-line"></i> Pipeline</span>
+                    <h2 class="section-title">Как мы <span class="highlight">создаем игры</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="fade-right">
+                        <div class="tech-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>01. Концепция & Дизайн</h3>
+                        <p>Анализ целевой аудитории, разработка GDD, прототипирование механик, создание артов и сценария.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="tech-icon"><i class="fas fa-code"></i></div>
+                        <h3>02. Программирование</h3>
+                        <p>Чистый код, архитектура под масштабирование, интеграция SDK, серверная логика и базы данных.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="tech-icon"><i class="fas fa-paintbrush-fine"></i></div>
+                        <h3>03. Арт & Анимация</h3>
+                        <p>3D-моделирование, VFX, шейдеры, анимация персонажей, окружение, UI/UX под стиль игры.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="300">
+                        <div class="tech-icon"><i class="fas fa-chart-simple"></i></div>
+                        <h3>04. Тестирование & Launch</h3>
+                        <p>QA, нагрузочное тестирование, балансировка, публикация в Steam, App Store, Google Play и поддержка.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Почему мы -->
+        <section>
+            <div class="container">
+                <div class="cta-section" data-aos="flip-up">
+                    <i class="fas fa-crown" style="font-size: 3rem; color: #00f0ff; margin-bottom: 1rem; display: inline-block;"></i>
+                    <h2 style="font-size: 2rem;">Опыт в GameDev — <span class="gradient-text">более 8 коммерческих проектов</span></h2>
+                    <p style="margin: 1rem 0;">Работаем с инди-студиями и крупными издателями. Собственные наработки: система диалогов, AI поведения, оптимизация под низкие пк.</p>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;">Обсудить идею игры</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы гейм-студий -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-comment-dots"></i> Клиенты о нас</span>
+                    <h2 class="section-title">Мнение <span class="highlight">партнеров</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="fade-up">
+                        <i class="fas fa-quote-left" style="font-size: 2rem; color: #00f0ff;"></i>
+                        <p style="margin: 1rem 0;">"Collepse создали для нас мультиплеерный прототип за 3 недели! Отличный подход к геймдизайну и чистая архитектура кода."</p>
+                        <h4>— CyberPulse Games</h4>
+                    </div>
+                    <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-quote-left" style="font-size: 2rem; color: #00f0ff;"></i>
+                        <p style="margin: 1rem 0;">"Оптимизация под PC и консоли выполнена на высшем уровне. Игра летает даже на средних системах."</p>
+                        <h4>— NeonForge Studio</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ по GameDev -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+                    <h2 class="section-title">Часто задаваемые <span class="highlight">вопросы</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3><i class="fas fa-cube"></i> Какие платформы поддерживаете?</h3>
+                        <p>PC (Windows, Mac, Linux), консоли (PlayStation, Xbox, Nintendo Switch), мобильные (iOS, Android) и WebGL.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3><i class="fas fa-clock"></i> Сколько времени занимает разработка?</h3>
+                        <p>От 2 месяцев для казуальной игры, от 6+ месяцев для полноценного мультиплеерного проекта. Все зависит от сложности.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3><i class="fas fa-chart-line"></i> Помогаете с пост-релизной поддержкой?</h3>
+                        <p>Да, мы сопровождаем проекты, выпускаем обновления, патчи, новый контент и поддерживаем серверную инфраструктуру.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="justify-content: flex-start;">
+                        <i class="fas fa-meteor" style="font-size: 2rem; color:#00f0ff;"></i>
+                        <span style="font-weight: bold;">Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" style="color:#b0c4de; text-decoration: none;">Главная</a></li>
+                        <li><a href="index.html#services" style="color:#b0c4de; text-decoration: none;">Услуги</a></li>
+                        <li><a href="index.html#team" style="color:#b0c4de; text-decoration: none;">Команда</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fab fa-telegram"></i> @collepse_official</p>
+                    <p><i class="fas fa-envelope"></i> info@collepse.xyz</p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; padding-top: 2rem; border-top: 1px solid #1e2a3a;">
+                <p>© 2026 Collepse-official</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, mirror: false });
+        
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            
+            const backBtn = document.getElementById('backToTop');
+            if(window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        
+        // Back to top
+        const backBtn = document.getElementById('backToTop');
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Canvas particles (lightweight version)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let particles = [];
+        
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+        
+        function createParticles() {
+            particles = [];
+            for(let i = 0; i < 80; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.5 + 0.2,
+                    speedX: (Math.random() - 0.5) * 0.3,
+                    speedY: (Math.random() - 0.5) * 0.2,
+                });
+            }
+        }
+        
+        function drawParticles() {
+            if(!ctx) return;
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0c12';
+            ctx.fillRect(0, 0, width, height);
+            for(let p of particles) {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+                ctx.fill();
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if(p.x < 0) p.x = width;
+                if(p.x > width) p.x = 0;
+                if(p.y < 0) p.y = height;
+                if(p.y > height) p.y = 0;
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

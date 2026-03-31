@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Collepse AI Integrations: нейросетевые решения, Telegram боты, LLM интеграции, умные алгоритмы и AI-ассистенты для бизнеса.">
+    <meta name="theme-color" content="#0a0c12">
+    <title>AI Integrations | Collepse - Нейросетевые решения будущего</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="Collepse logo">
+                </div>
+                <span class="logo-text">Collepse<span class="neon-dot">.</span></span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#services" class="nav-link">Услуги</a></li>
+                    <li><a href="index.html#team" class="nav-link">Команда</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Связь</a></li>
+                    <li><a href="./web-development.html" class="nav-link" data-nav="faq">Web development</a></li>
+                    <li><a href="./pc-optimization.html" class="nav-link" data-nav="pc-optimization">PC Optimization</a></li>
+                    <li><a href="./game-development.html" class="nav-link" data-nav="game-development">Game Development</a></li>
+                    <li><a href="ai-integrations.html" class="nav-link" data-nav="ai-integrations">AI Integrations</a></li>
+
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- AI Hero Section -->
+        <section class="ai-hero">
+            <div class="container">
+                <div data-aos="fade-up">
+                    <div class="hero-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>AI & Neural Networks</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Интеграция <span class="gradient-text">нейросетей</span><br>
+                        в ваш бизнес
+                    </h1>
+                    <p class="hero-description">
+                        Создаем умных Telegram ботов, AI-ассистентов, системы анализа данных и автоматизации. 
+                        GPT-4, Gemini, Claude — мы интегрируем лучшие LLM модели в ваши продукты.
+                    </p>
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-robot"></i> Заказать AI решение
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="zoom-in">
+                        <div class="stat-number">20+</div>
+                        <p>AI проектов</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-number">10M+</div>
+                        <p>Запросов обработано</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-number">24/7</div>
+                        <p>AI поддержка</p>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-number">99.9%</div>
+                        <p>Аптайм</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Capabilities -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-microchip"></i> Технологии</span>
+                    <h2 class="section-title">Что мы <span class="highlight">умеем</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="flip-left">
+                        <div class="tech-icon"><i class="fab fa-telegram"></i></div>
+                        <h3>Telegram AI Боты</h3>
+                        <p>Умные боты с GPT-4, распознаванием изображений, голосовыми командами. Автоматизация поддержки, консультанты, генерация контента.</p>
+                    </div>
+                    <div class="tech-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="tech-icon"><i class="fas fa-language"></i></div>
+                        <h3>LLM Интеграция</h3>
+                        <p>Подключение GPT-4, Claude, Gemini, локальных моделей. Fine-tuning, промпт-инжиниринг, многопользовательские сессии.</p>
+                    </div>
+                    <div class="tech-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>AI Аналитика</h3>
+                        <p>Анализ данных, прогнозирование, sentiment analysis, обработка больших объемов текста и документов.</p>
+                    </div>
+                    <div class="tech-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="tech-icon"><i class="fas fa-image"></i></div>
+                        <h3>Нейросетевая генерация</h3>
+                        <p>Генерация изображений (DALL-E, Stable Diffusion), текстов, кода, креативных концепций для маркетинга.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши AI проекты -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-rocket"></i> Кейсы</span>
+                    <h2 class="section-title">Реализованные <span class="highlight">AI решения</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="zoom-in">
+                        <div class="project-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>NeuroAssistant Bot</h3>
+                            <p>Telegram бот на базе GPT-4 Turbo с памятью диалога, генерацией изображений и голосовым вводом. Обрабатывает 5000+ запросов в день.</p>
+                            <div class="project-tags">
+                                <span class="tag">GPT-4</span>
+                                <span class="tag">Whisper</span>
+                                <span class="tag">DALL-E</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-simple"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Smart Analytics Dashboard</h3>
+                            <p>Система анализа отзывов клиентов с AI-классификацией тональности и автоматической генерацией отчетов для бизнеса.</p>
+                            <div class="project-tags">
+                                <span class="tag">NLP</span>
+                                <span class="tag">Sentiment Analysis</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>CodeGen Assistant</h3>
+                            <p>AI-помощник для разработчиков: генерация кода, рефакторинг, документация. Интеграция с VS Code и Telegram.</p>
+                            <div class="project-tags">
+                                <span class="tag">Code Llama</span>
+                                <span class="tag">API</span>
+                                <span class="tag">Auto-complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Стек технологий -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-cubes"></i> Стек</span>
+                    <h2 class="section-title">Технологический <span class="highlight">стек</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="fade-up">
+                        <div class="tech-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>LLM Models</h3>
+                        <p>OpenAI GPT-4o, GPT-4 Turbo, Google Gemini Pro, Anthropic Claude, локальные модели (Llama 3, Mistral).</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="tech-icon"><i class="fab fa-python"></i></div>
+                        <h3>Backend & AI</h3>
+                        <p>Python (FastAPI, Django), Node.js, LangChain, LlamaIndex, PyTorch, TensorFlow для кастомных моделей.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <h3>Data & Storage</h3>
+                        <p>PostgreSQL, MongoDB, Redis, векторные БД (Pinecone, Qdrant) для RAG архитектур.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="tech-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3>Deployment</h3>
+                        <p>Docker, Kubernetes, AWS/GCP/Azure, serverless функции для масштабируемых AI-сервисов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section>
+            <div class="container">
+                <div class="cta-section" data-aos="flip-up">
+                    <i class="fas fa-chart-line" style="font-size: 3rem; color: #00f0ff; margin-bottom: 1rem; display: inline-block;"></i>
+                    <h2 style="font-size: 2rem;">Автоматизация с AI — <span class="gradient-text">эффективность +70%</span></h2>
+                    <p style="margin: 1rem 0;">Сокращаем рутину, ускоряем обработку данных, повышаем качество обслуживания клиентов с помощью нейросетей.</p>
+                    <a href="index.html#contact" class="btn btn-primary" style="margin-top: 1rem;">Обсудить AI интеграцию</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс разработки AI решений -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-diagram-project"></i> Процесс</span>
+                    <h2 class="section-title">Как мы создаем <span class="highlight">AI продукты</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card" data-aos="fade-right">
+                        <div class="tech-icon"><i class="fas fa-search"></i></div>
+                        <h3>01. Анализ & Data</h3>
+                        <p>Изучаем бизнес-процессы, собираем данные, определяем оптимальные AI-модели и архитектуру.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="tech-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>02. Прототипирование</h3>
+                        <p>Создаем MVP бота или AI-сервиса, тестируем промпты, настраиваем fine-tuning.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="tech-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>03. Разработка</h3>
+                        <p>Пишем бэкенд, интегрируем API, настраиваем базы данных, оптимизируем latency.</p>
+                    </div>
+                    <div class="tech-card" data-aos="fade-right" data-aos-delay="300">
+                        <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>04. Мониторинг & Support</h3>
+                        <p>Деплой, обучение команды, непрерывное улучшение моделей на основе обратной связи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+                    <h2 class="section-title">Часто задаваемые <span class="highlight">вопросы</span></h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h3><i class="fas fa-comment-dollar"></i> Сколько стоит разработка AI бота?</h3>
+                        <p>Стоимость зависит от сложности: от $300 за простого Telegram бота с GPT до $2000+ за полноценную RAG-систему с аналитикой.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3><i class="fas fa-shield-alt"></i> Безопасно ли использовать AI для бизнеса?</h3>
+                        <p>Да, мы используем шифрование, настраиваем приватные API ключи, а при необходимости разворачиваем локальные модели для полного контроля данных.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3><i class="fas fa-sync-alt"></i> Можно ли обучить модель на моих данных?</h3>
+                        <p>Конечно! Мы проводим fine-tuning моделей на ваших датасетах, создаем кастомные промпты и векторные базы знаний.</p>
+                    </div>
+                    <div class="tech-card">
+                        <h3><i class="fas fa-clock"></i> Какие сроки разработки?</h3>
+                        <p>Базового Telegram бота запускаем за 5-7 дней. Сложные системы с аналитикой и кастомным бэкендом — от 3 до 6 недель.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" style="justify-content: flex-start;">
+                        <i class="fas fa-meteor" style="font-size: 2rem; color:#00f0ff;"></i>
+                        <span style="font-weight: bold;">Collepse</span>
+                    </div>
+                    <p>Кибер-команда нового поколения, создающая цифровое будущее.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/collepse_official" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#team">Команда</a></li>
+                        <li><a href="index.html#portfolio">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="web-development.html">Web разработка</a></li>
+                        <li><a href="game-development.html">Game Development</a></li>
+                        <li><a href="ai-integrations.html">AI интеграции</a></li>
+                        <li><a href="pc-optimization.html">PC оптимизация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <p><i class="fab fa-telegram"></i> @collepse_official</p>
+                    <p><i class="fas fa-envelope"></i> info@collepse.xyz</p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; padding-top: 2rem; border-top: 1px solid #1e2a3a;">
+                <p>© 2026 Collepse-official. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, mirror: false });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            
+            const backBtn = document.getElementById('backToTop');
+            if(window.scrollY > 300) backBtn.classList.add('visible');
+            else backBtn.classList.remove('visible');
+        });
+        
+        // Back to top
+        const backBtn = document.getElementById('backToTop');
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Canvas particles (lightweight version)
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let particles = [];
+        
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
+        
+        function createParticles() {
+            particles = [];
+            for(let i = 0; i < 100; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.4 + 0.1,
+                    speedX: (Math.random() - 0.5) * 0.2,
+                    speedY: (Math.random() - 0.5) * 0.15,
+                });
+            }
+        }
+        
+        function drawParticles() {
+            if(!ctx) return;
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0c12';
+            ctx.fillRect(0, 0, width, height);
+            for(let p of particles) {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 240, 255, ${p.alpha})`;
+                ctx.fill();
+                p.x += p.speedX;
+                p.y += p.speedY;
+                if(p.x < 0) p.x = width;
+                if(p.x > width) p.x = 0;
+                if(p.y < 0) p.y = height;
+                if(p.y > height) p.y = 0;
+            }
+            requestAnimationFrame(drawParticles);
+        }
+        
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            createParticles();
+        });
+        resizeCanvas();
+        createParticles();
+        drawParticles();
+    </script>
+</body>
+</html>
